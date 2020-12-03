@@ -1,0 +1,20 @@
+@media screen and (max-device-width: 480px) {
+  section {
+    width: 100%;
+  }
+  .wrapInput {
+    width: 165px;
+    transform: skewX(0deg);
+  }
+  input {
+    width: 163px;
+    transform: skewX(0deg);
+  }
+  button {
+    width: 135px;
+    transform: skewX(0deg);
+  }
+  p {
+    transform: skewX(0deg);
+  }
+}

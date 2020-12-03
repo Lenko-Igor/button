@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  width: 713px;
+  margin: 15px auto;
+  padding: 30px 0;
+  background: url(../img/fon.jpg) no-repeat;
+  background-size: cover;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.wrapInput {
+  width: 410px;
+  height: 55px;
+  padding-left: 26px;
+  background-color: white;
+  opacity: 0.8;
+  border: 1px solid #f1f1f1;
+  transform: skewX(-45deg);
+}
+input {
+  width: 355px;
+  height: 53px;
+  margin: auto 0;
+  border: none;
+  transform: skewX(45deg);
+  font-size: 17px;
+}
+button {
+  display: block;
+  width: 207px;
+  height: 55px;
+  background-color: #fe0000;
+  border: 1px solid #f1f1f1;
+  transform: skewX(-45deg);
+  cursor: pointer;
+}
+input:focus,
+button:focus {
+  outline: 0;
+}
+button:hover {
+  background-color: #d10a0a;
+  box-shadow: 0px 0px 12px 5px #fcfcfca3;
+}
+p {
+  text-transform: uppercase;
+  transform: skewX(45deg);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+#error {
+  text-transform: none;
+  color: red;
+  font-size: 20px;
+  transform: skewX(0deg);
+  text-align: center;
+  height: 20px;
+}
