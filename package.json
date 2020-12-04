@@ -1,0 +1,31 @@
+{
+  "name": "button",
+  "version": "1.0.0",
+  "description": "button test work",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7"
+  },
+  "scripts": {
+    "build": "babel src -d build",
+    "watch": "babel src -d build -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lenko-Igor/button.git"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css"
+  ],
+  "author": "Igor <mk2008@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lenko-Igor/button/issues"
+  },
+  "homepage": "https://github.com/Lenko-Igor/button#readme"
+}
