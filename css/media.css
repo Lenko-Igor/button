@@ -14,7 +14,7 @@
     width: 135px;
     transform: skewX(0deg);
   }
-  p {
+  button p {
     transform: skewX(0deg);
   }
 }
