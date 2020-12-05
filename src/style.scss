@@ -1,0 +1,90 @@
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width:600px) {@content};
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  section {
+    width: 713px;
+    margin: 15px auto;
+    padding: 30px 0;
+    background: url(..//img/fon.jpg) no-repeat;
+    background-size: cover;
+    @include responsive(phone){
+      width: 100%;
+    }
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      .wrapInput {
+        width: 410px;
+        height: 55px;
+        padding-left: 26px;
+        background-color: white;
+        opacity: 0.8;
+        border: 1px solid #f1f1f1;
+        transform: skewX(-45deg);
+        @include responsive(phone){
+          width: 165px;
+          transform: skewX(0deg);
+        }
+        input {
+          width: 355px;
+          height: 53px;
+          margin: auto 0;
+          border: none;
+          transform: skewX(45deg);
+          font-size: 17px;
+          &:focus{
+            outline: 0;
+          }
+          @include responsive(phone){
+            width: 163px;
+            transform: skewX(0deg);
+          }
+        }
+      }
+      button {
+        display: block;
+        width: 207px;
+        height: 55px;
+        background-color: #fe0000;
+        border: 1px solid #f1f1f1;
+        transform: skewX(-45deg);
+        cursor: pointer;
+        &:focus{
+          outline: 0;
+        };
+        &:hover {
+          background-color: #d10a0a;
+          box-shadow: 0px 0px 12px 5px #fcfcfca3;
+        }
+        @include responsive(phone){
+          width: 135px;
+          transform: skewX(0deg);
+        }
+        p {
+          text-transform: uppercase;
+          transform: skewX(45deg);
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          @include responsive(phone){
+            transform: skewX(0deg);
+          }
+        }
+      }
+    }
+    >p {
+      font-size: 20px;
+      text-align: center;
+      height: 25px;
+      margin-top: 15px;
+      line-height: 22px;
+    }
+  }
+}
